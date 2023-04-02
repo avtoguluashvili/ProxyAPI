@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "qdJJOF0zSDmItzN/wKoUIiPbIGTpVojvVrS3mZzcpdyP080BdK9alttdXPS0YtJdZCk15wr8vCfHvkEW7Y8pqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Geekster PC\\source\\repos\\ProxyAPI\\ProxyAPI\\ProxyAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Geekster PC\\.nuget\\packages\\htmlagilitypack\\1.11.46\\htmlagilitypack.1.11.46.nupkg.sha512",
+    "C:\\Users\\Geekster PC\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Geekster PC\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Geekster PC\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Geekster PC\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Geekster PC\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Geekster PC\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
