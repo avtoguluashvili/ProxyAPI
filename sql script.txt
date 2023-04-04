@@ -1,0 +1,39 @@
+CREATE DATABASE RailroadTickets;
+GO
+
+USE RailroadTickets;
+GO
+
+CREATE TABLE Stations (
+    StationID INT PRIMARY KEY IDENTITY,
+    StationName NVARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Trains (
+    TrainID INT PRIMARY KEY IDENTITY,
+    TrainNumber NVARCHAR(10) NOT NULL
+);
+
+CREATE TABLE Routes (
+    RouteID INT PRIMARY KEY IDENTITY,
+    TrainID INT FOREIGN KEY REFERENCES Trains(TrainID),
+    OriginID INT FOREIGN KEY REFERENCES Stations(StationID),
+    DestinationID INT FOREIGN KEY REFERENCES Stations(StationID),
+    DepartureTime DATETIME NOT NULL,
+    ArrivalTime DATETIME NOT NULL
+);
+
+CREATE TABLE TicketTypes (
+    TicketTypeID INT PRIMARY KEY IDENTITY,
+    TypeName NVARCHAR(100) NOT NULL,
+    Price DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE Tickets (
+    TicketID INT PRIMARY KEY IDENTITY,
+    RouteID INT FOREIGN KEY REFERENCES Routes(RouteID),
+    TicketTypeID INT FOREIGN KEY REFERENCES TicketTypes(TicketTypeID),
+    PassengerName NVARCHAR(100) NOT NULL,
+    SeatNumber INT NOT NULL,
+    PurchaseDate DATETIME NOT NULL
+);
